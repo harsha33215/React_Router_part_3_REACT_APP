@@ -54,6 +54,7 @@ class BlogItemDetails extends Component {
   }
 
   render() {
+    const {isLoading} = this.state
     return <div className="blog-container">{isLoading ? (
           <Loader type="TailSpin" color="#00BFFF" height={50} width={50} />
         ) : (
